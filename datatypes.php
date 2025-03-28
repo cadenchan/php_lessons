@@ -26,7 +26,7 @@
                         <a class="nav-link" href="#">blank</a>
                     </li>
                     <li class="nav-item">
-
+                        <a class="nav-link" href="operators.php">Operators</a>
                     </li>
                 </ul>
             </div>
