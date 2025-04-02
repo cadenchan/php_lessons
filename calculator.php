@@ -9,8 +9,8 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+<body class="bg-danger-subtle">
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,7 +52,7 @@
             <option>Divide</option>
         </select>
         <br>
-        <button type="submit" name="submit" value="submit">
+        <button type="submit" class="btn btn-primary" name="submit" value="submit">
             Calculate
         </button>
     </form>
