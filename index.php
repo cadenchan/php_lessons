@@ -33,6 +33,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="calculator.php">Calculator</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="calendar.php">Calendar</a>
+                    </li>
                 </ul>
             </div>
         </div>
