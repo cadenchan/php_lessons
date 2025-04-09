@@ -20,7 +20,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                        <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="datatypes.php">Data Types</a>
@@ -41,22 +41,16 @@
                         <a class="nav-link" href="loops.php">Loops</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="arrays.php">Arrays</a>
+                        <a class="nav-link active" aria-current="page" href="arrays.php">Arrays</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <form method="GET">
-        <input type="text" name="person">
-        <button type="submit" class="btn btn-primary">SUBMIT</button>
-    </form>
     <?php
-    /*
-      $name = $_GET['person'];
-      echo $name." is incredibly handsome and awesome.";
-    */
-      ?>
+        $array = array("Caden", "Caleb", "Lizandro", "Will", "William");
+        echo $array[0]
+    ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>

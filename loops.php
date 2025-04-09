@@ -20,7 +20,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                        <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="datatypes.php">Data Types</a>
@@ -38,7 +38,7 @@
                         <a class="nav-link" href="calendar.php">Calendar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="loops.php">Loops</a>
+                        <a class="nav-link active" aria-current="page" href="loops.php">Loops</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="arrays.php">Arrays</a>
@@ -47,16 +47,33 @@
             </div>
         </div>
     </nav>
-    <form method="GET">
-        <input type="text" name="person">
-        <button type="submit" class="btn btn-primary">SUBMIT</button>
-    </form>
     <?php
-    /*
-      $name = $_GET['person'];
-      echo $name." is incredibly handsome and awesome.";
-    */
-      ?>
+        //Loop
+
+        //while loop
+        $x = 1;
+        while ($x < 5) {
+            echo "Hello there<br>";
+            $x++;
+        }
+        //do while loop
+        $y = 1;
+        do {
+            echo "Hi there<br>";
+            $y++;
+        }
+        while ($y < 5);
+        //for loop
+    
+        for ($z = 1; $z <= 10; $z++) {
+            echo "Hi<br>";
+        }
+        //foreach loop
+        $array = array("Daniel", "Jane", "Jacob");
+        foreach ($array as $loopdata) {
+            echo "My name is ".$loopdata."<br>";
+        }
+    ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>

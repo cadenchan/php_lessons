@@ -37,6 +37,12 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="calendar.php">Calendar</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="loops.php">Loops</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="arrays.php">Arrays</a>
+                    </li>
                 </ul>
             </div>
         </div>
