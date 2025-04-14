@@ -10,46 +10,12 @@
     <link rel="stylesheet" href="mystyle.css">
 </head>
 
+<?php
+    include 'includes/header.php';
+?>
+
 <body class="bg-danger-subtle">
-    <nav class="navbar navbar-expand-lg bg-dark " data-bs-theme="dark">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.php">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="datatypes.php">Data Types</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="operators.php">Operators</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="conditionals.php">Conditionals</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="calculator.php">Calculator</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="calendar.php">Calendar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="loops.php">Loops</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="arrays.php">Arrays</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="functions.php">Functions</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    
     <form method="GET">
         <input type="text" name="person">
         <button type="submit" class="btn btn-primary">SUBMIT</button>
