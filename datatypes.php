@@ -44,6 +44,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="arrays.php">Arrays</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="functions.php">Functions</a>
+                    </li>
                 </ul>
             </div>
         </div>
