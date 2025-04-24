@@ -16,27 +16,23 @@
 ?>
 
 <body class="bg-danger-subtle">
-    
-    <form method="GET">
-        <input type="text" name="person">
-        <button type="submit" class="btn btn-primary">SUBMIT</button>
+    <form action="">
+        <input type="text" name="first" placeholder="firstname">
+        <br>
+        <input type="text" name="last" placeholder="lastname">
+        <br>
+        <input type="text" name="email" placeholder="e-mail">
+        <br>
+        <input type="text" name="uid" placeholder="username">
+        <br>
+        <input type="password" name="pwd" placeholder="password">
+        <br>
+        <button type="submit" name="submit">Sign up</button>
     </form>
     <?php
-    /*
-      $name = $_GET['person'];
-      echo $name." is incredibly handsome and awesome.";
-    */
-      ?>
-    <?php
-        $sql = "SELECT * FROM users;";
-        $result = mysqli_query($conn, $sql);
-        $resultCheck = mysqli_num_rows($result);
+        $sql = "";
+        mysqli_query($conn, $sql);
 
-        if ($resultCheck > 0) {
-            while ($row = mysqli_fetch_assoc($result)) {
-                echo $row['user_uid']."<br>";
-            }
-        }
     ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
