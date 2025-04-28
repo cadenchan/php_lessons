@@ -1,7 +1,10 @@
 <?php
-$dbServername = "localhost";
+$Servername = "localhost";
 $dbUsername = "root";
 $dbPassword = "";
-$dbName = "loginsystem";
+$dbName = "loginsystemtut";
 
-$conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
+$conn = mysqli_connect($Servername, $dbUsername, $dbPassword, $dbName);
+if (!$conn) {
+    die("Connection failed: ").mysqli_connect_error();
+}

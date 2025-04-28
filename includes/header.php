@@ -60,7 +60,14 @@
         </nav>
         <div>
             <form action="includes/login.inc.php" method="post">
-                <!-- CONTINUE HERE 11:00-->
+                <input type="text" name="mailuid" placeholder="Username/E-mail...">
+                <input type="password" name="pwd" placeholder="Password...">
+                <button type="submit" name="login-submit">Login</button>
+                <a href="signup.php">Signup</a>
+            </form>
+            <form action="includes/logout.inc.php" method="post">
+                <button type="submit" name="logout-submit">Logout</button>
+            
             </form>
         </div>
     </header>

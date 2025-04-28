@@ -16,7 +16,8 @@
 ?>
 
 <body class="bg-danger-subtle">
-    
+    <p>You are logged in!</p>
+    <p>You are logged in!</p>
     <form method="GET">
         <input type="text" name="person">
         <button type="submit" class="btn btn-primary">SUBMIT</button>
