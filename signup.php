@@ -7,6 +7,7 @@
     <div>
         <section>
             <h1>Signup</h1>
+            <!-- CONTINUE HERE AT 1:43:20 -->
             <form action="includes/signup.inc.php" method="post">
                 <input type="text" name="uid" placeholder="Username">
                 <input type="text" name="mail" placeholder="Email">

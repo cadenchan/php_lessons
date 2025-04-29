@@ -16,8 +16,16 @@
 ?>
 
 <body class="bg-danger-subtle">
-    <p>You are logged in!</p>
-    <p>You are logged in!</p>
+    <?php
+        if (isset($_SESSION['userId'])) {
+            echo '<p>You are logged in!</p>';
+        }
+        else {
+            echo '<p>You are logged out!</p>';
+        }
+    ?>
+
+   
     <form method="GET">
         <input type="text" name="person">
         <button type="submit" class="btn btn-primary">SUBMIT</button>
@@ -28,17 +36,8 @@
       echo $name." is incredibly handsome and awesome.";
     */
       ?>
-    <?php
-        $sql = "SELECT * FROM users;";
-        $result = mysqli_query($conn, $sql);
-        $resultCheck = mysqli_num_rows($result);
-
-        if ($resultCheck > 0) {
-            while ($row = mysqli_fetch_assoc($result)) {
-                echo $row['user_uid']."<br>";
-            }
-        }
-    ?>
+    
+ 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
